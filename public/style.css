@@ -1,0 +1,222 @@
+:root {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+}
+
+header {
+  display: flex;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header-img {
+  width: 100%;
+  height: 100%;
+  background-color: #5ca5a5;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: hsl(180, 29%, 50%, 0.2);
+  min-height: 100vh;
+  position: relative;
+}
+
+.jobs-container {
+  width: 110rem;
+  padding-top: 8.6rem;
+  padding-bottom: 12rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+}
+
+.job-container {
+  background-color: #fff;
+  padding: 3.2rem 4rem;
+  display: flex;
+  border-radius: 5px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+.line::after {
+  content: "";
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  background-color: #5ca5a5;
+  top: 0;
+  left: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+.company-logo {
+  margin-right: 2.4rem;
+}
+
+.about-job {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.company-featues {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.features {
+  display: flex;
+  gap: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  list-style: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.features li {
+  padding: 0.7rem 0.9rem 0.3rem 0.8rem;
+  border-radius: 15px;
+}
+
+.new-feature {
+  background-color: #5ca5a5;
+}
+
+.featured-feature {
+  background-color: #2b3939;
+}
+
+.company-name {
+  font-size: 1.8rem;
+  color: #5ca5a5;
+}
+
+.position {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2b3939;
+  transition: all 0.3s;
+}
+
+.position:hover {
+  cursor: pointer;
+  color: #5ca5a5;
+}
+
+.details {
+  display: flex;
+  gap: 2.4rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #7c8f8f;
+}
+
+.posted-at {
+  list-style: none;
+}
+
+.required {
+  margin-left: auto;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+  color: #5ca5a5;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.required li {
+  padding: 0.9rem 0.6rem;
+  background-color: hsl(180, 29%, 50%, 0.1);
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.required li:hover {
+  cursor: pointer;
+  background-color: #5ca5a5;
+  color: #fff;
+}
+
+/* Filter */
+.filter {
+  position: absolute;
+  padding: 2rem 4rem;
+  background-color: #fff;
+  width: 110rem;
+  top: -35px;
+  border-radius: 5px;
+  display: flex;
+}
+
+.filter-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+}
+
+.filter-item-container {
+  margin-left: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #5ca5a5;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.filter-item {
+  padding: 0.9rem 0.8rem;
+  background-color: hsl(180, 29%, 50%, 0.1);
+  border-radius: 5px 0 0 5px;
+}
+
+.close-img {
+  padding: 1rem;
+  background-color: #5ca5a5;
+  border-radius: 0 5px 5px 0;
+  transition: all 0.3s;
+  display: block;
+}
+
+.close-img:hover {
+  cursor: pointer;
+  background-color: #2b3939;
+}
+
+.clear {
+  margin-left: auto;
+  align-self: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #5ca5a5;
+}
+
+.clear:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.hide {
+  display: none;
+}
